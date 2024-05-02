@@ -1,4 +1,4 @@
-# Detecting-Fake-and-Real-News
+# Detecting Fake/Real News using TfidfVectorizer and PassiveAggresive Classifier
 Fake news represents the news which are usually hoaxes and spreads through social media or any other media.
 Many of them contain false or exaggerated claims which may be viralied using alogorithms.
 
