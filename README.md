@@ -19,7 +19,7 @@ We evaluate the performance of the model using various metrics such as accuracy,
 - Accuracy: 93.37%
 
 ## Confusion Matrix
-        **FAKE**    **REAL**
+            FAKE    REAL
 **FAKE**    586     42
 **REAL**     42     597
 
