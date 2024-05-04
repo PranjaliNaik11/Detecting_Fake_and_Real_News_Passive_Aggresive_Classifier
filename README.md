@@ -1,20 +1,29 @@
-# Detecting Fake/Real News using TfidfVectorizer and PassiveAggresive Classifier
-Fake news represents the news which are usually hoaxes and spreads through social media or any other media.
-Many of them contain false or exaggerated claims which may be viralied using alogorithms.
+# Detecting Fake/Real News using TfidfVectorizer and PassiveAggressive Classifier
 
-# TfidfVectorizer
-Term Frequency: Defined as the number of times a particular word appears in a document. If the number is high then it means that the term appears more than the others in a given document.
+## Overview
+This project aims to detect fake news articles using machine learning techniques. We leverage the TfidfVectorizer to convert text data into numerical features and train a PassiveAggressive Classifier to distinguish between real and fake news.
 
-Inverse Document Frequency: If certain words appear many times in a document but they also appear in many other documents then they may be irrelevant. IDF measures the significance of a term.
+## Dataset
+We use a dataset containing labeled news articles, where each article is labeled as either real or fake.
 
-We use TfidfVectorizer to convert a collection of raw documents into a matrix of TF-IDF features.
+## Dependencies
+- Python 3.x
+- scikit-learn
+- numpy
+- pandas
 
-# PassiveAggresive Classifier
-1) They are online learning algorithms.
-2) These algorithms remain passive for a correct classification outcome and turn aggresive in case of a miscalculation or adjusting.
-3) Its purpose is to make updates that correct the loss, causing very little change in the weight vector.
+## Model Evaluation
+We evaluate the performance of the model using various metrics such as accuracy, precision, recall, and F1-score.
 
-# Process
-We will use sklearn to build a TfidfVectorizer on our dataset. Then we will initialize a PassiveAggresive Classifier to fit the model.
-We will use the accuracy score and confusion matrix to see how well our model fares.
+## Results
+- Accuracy: 93.37%
 
+## Confusion Matrix
+        **FAKE**    **REAL**
+**FAKE**    586     42
+**REAL**     42     597
+
+## Conclusion
+Our model demonstrates promising results in detecting fake news articles. Further improvements and optimizations can be made to enhance its performance.
+
+---
