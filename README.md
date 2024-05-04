@@ -19,9 +19,8 @@ We evaluate the performance of the model using various metrics such as accuracy,
 - Accuracy: 93.37%
 
 ## Confusion Matrix
-            FAKE    REAL
-**FAKE**    586     42
-**REAL**     42     597
+array([[586,  42],
+       [ 42, 597]])
 
 ## Conclusion
 Our model demonstrates promising results in detecting fake news articles. Further improvements and optimizations can be made to enhance its performance.
